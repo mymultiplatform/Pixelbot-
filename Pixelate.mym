@@ -1,0 +1,1 @@
+pkg update -y && pkg upgrade -y && pkg install -y proot-distro python wget unzip git && proot-distro install ubuntu && proot-distro login ubuntu --shared-tmp -- bash -c "apt update -y && apt upgrade -y && apt install -y python3-pip git wget unzip && pip install --upgrade pip && pip install playwright && python3 -m playwright install firefox"
